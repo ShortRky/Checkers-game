@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Animated Checkers - Player vs Bot (Web)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Animated Checkers — Player (Red) vs Bot (White)</h1>
+      <div class="controls">
+        <button id="newGame">New Game</button>
+        <label><input type="checkbox" id="showCoords"> Show coordinates</label>
+        <span id="status"></span>
+      </div>
+    </header>
+
+    <main>
+      <canvas id="board" width="800" height="800"></canvas>
+      <aside class="instructions">
+        <h2>How to play</h2>
+        <ul>
+          <li>Click a red piece to select it, then click a valid square to move.</li>
+          <li>Captures are mandatory. Multi-captures are supported.</li>
+          <li>The bot moves automatically after you. Bot prefers captures but is slightly random.</li>
+        </ul>
+        <h3>Twist</h3>
+        <p>The bot occasionally makes unconventional sacrifices for a more varied game.</p>
+      </aside>
+    </main>
+
+    <footer>
+      <p>ICS3U/ICS4U Final Project. Implemented with vanilla JavaScript and canvas.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
